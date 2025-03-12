@@ -1,7 +1,7 @@
 ### Building the Resynthesizer Plugin via MacPorts
-This was a little tricky and required a few tweaks for `sudo port install gimp-resynthesizer` to finish successfully.
+This was extremely easy on my M1 Mac with Sequoia 15.3.2 as the command `sudo port install gimp-resynthesizer` finished the first time successfully. Hopefully this is how it goes for you! However, it required a few tweaks to finish successfully on a different M1 Mac with Sequoia 15.3.1. Not sure what the difference was between the two, but the rest of this will be from the perspective of the difficult installation.
 
-When I first tried it, I was getting errors installing `graphviz`:
+When I first tried `sudo port install gimp-resynthesizer`, I was getting errors installing `graphviz`:
 ```console
 $ sudo port install gimp-resynthesizer
 [...]
@@ -28,7 +28,17 @@ $ sudo port install clang-18
 $ sudo port install graphviz configure.cxx=clang++-mp-18
 ```
 
-Pro: `graphviz` was now installed. Con: Now `gexiv2` wouldn't install.
+**Pro**: `graphviz` was now installed. **Con**: Now `gexiv2` wouldn't install.
+
+```console
+$ sudo port install gimp-resynthesizer
+[...]
+:info:build /opt/local/include/glib-2.0/glib/glib-typeof.h:43:10: fatal error: 'type_traits' file not found
+350 :info:build    43 | #include <type_traits>
+351 :info:build       |          ^~~~~~~~~~~~~
+352 :info:build 1 error generated.
+[...]
+```
 
 [This ticket](https://trac.macports.org/ticket/71179) led me to [this post](https://trac.macports.org/wiki/ProblemHotlist#clts16) which resulted in the following fix:
 ```console
