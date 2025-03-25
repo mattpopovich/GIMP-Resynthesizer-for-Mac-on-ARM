@@ -10,15 +10,7 @@ Special thanks to:
 The resynthesizer plug-in is for GIMP, so you won't be able to use it... without installing GIMP. Download GIMP's installer [here](https://www.gimp.org/downloads/).
 
 ## Install the Resynthesizer Plugin with Pre-Built Libraries (easiest)
-Copy the following files:
-- `resynthesizerLibraries` folder
-- All the python files (`*.py`)
-- `resynthesizer`
-- `resynthesizer_gui`
-
-From this repo to `/Applications/GIMP.app/Contents/Resources/lib/gimp/2.0/plug-ins`.
-
-Relaunch GIMP and you should see the plugin under *Filters* --> *Enhance* --> *Heal selection...*.
+Go to the [releases of this repo](https://github.com/mattpopovich/GIMP-Resynthesizer-for-Mac-on-ARM/releases) and follow the installation instructions for the version of GIMP that you have installed.
 
 Note that these files are compiled for macOS computers running ARM (Apple Silicon = M1, M2, etc.) processors. They will not work on macOS computers with Intel processors or any Windows or Linux machines.
 
