@@ -7,7 +7,7 @@ Special thanks to:
 - [wuguipeng](https://github.com/wuguipeng)'s [`gimp-resynthesizer-mac-arm64`](https://github.com/wuguipeng/gimp-resynthesizer-mac-arm64) for the inspiration
 
 ## Install GIMP
-The resynthesizer plug-in is for GIMP, so you won't be able to use it... without installing GIMP. Download GIMP's installer [here](https://www.gimp.org/downloads/).
+The resynthesizer plug-in is for GIMP, so you won't be able to use it... without installing GIMP. Download GIMP's installer [here](https://www.gimp.org/downloads/). You can find older GIMP versions here: [2.10.x](https://download.gimp.org/gimp/v2.10/macos/?C=M&O=D), [3.0.x](https://download.gimp.org/gimp/v3.0/macos/?C=M&O=D).
 
 ## Install the Resynthesizer Plugin with Pre-Built Libraries (easiest)
 Go to the [releases of this repo](https://github.com/mattpopovich/GIMP-Resynthesizer-for-Mac-on-ARM/releases) and follow the installation instructions for the version of GIMP that you have installed.
